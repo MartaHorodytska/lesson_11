@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #424551;
+}
+header {
+    background-color: rgb(230, 110, 110);  
+}
+.header__container h1,
+.footer__container h2{
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(137, 137, 226);
+}
+[class*="__container"] {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.town {
+    position: relative;
+}
+
+.town__image img,
+.town__car img,
+.town__retro-car img,
+.town__bird img {
+    width: 100%;
+}
+
+.town__car,
+.town__retro-car,
+.town__bird {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.town__car{
+    top: 463px;
+    left: 744px;
+    width: 246px;
+}
+
+.town__car:hover {
+    top: 452px;
+    left: 672px;
+}
+
+.town__car img {
+    transform: skew(10deg, 10deg);
+}
+.town__retro-car{
+    top: 340px;
+    left: 51px;
+    width: 176px;
+}
+.town__retro-car:hover{
+    top: 346px;
+    left: 110px;
+}
+.town__retro-car img {
+    transform: rotate3d(16, 123, 20, 36deg);
+}
+.town__bird{
+    top: 66px;
+    left: 258px;
+    width: 61px;
+}
+.town__bird:hover{
+    left: 230px;
+}
